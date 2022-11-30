@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron:wght@400;800&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            
+            <!-- HERO SECTION -->
+            <div id="hero">
+                <h1 id="title">Visit Bourne</h1>
+                <h2 id="tagline">Enjoy culture and history in this quaint town in rural Lincolnshire.</h2>
+            </div>
+            
+            <!-- ACTIVITIES SECTION -->
+            <div id="activities-container">
+                <div id="activities-heading">
+                    <h3>Top Three Activities to Do in Bourne</h3>
+                </div>
+                <div id="activity-images">
+                    <div>
+                        <a href="https://www.discoversouthkesteven.com/bourne-heritage-centre-baldocks-mill/"><img id="baldock" src="https://res.cloudinary.com/drirexwsz/image/upload/v1669300831/35591889955_677b1f8371_b_y1hrds.jpg"></a>
+                        <h5>Step Back in Time at Baldock’s Mill</h5>
+                        <p>Baldock’s Mill contains relics of Bourne’s colourful past with suprises that you might not expect!</p>
+                    </div>
+                    <div>
+                        <a href="https://www.iwm.org.uk/memorials/item/memorial/3727">
+                        <img id="memorial-gardens" src="https://res.cloudinary.com/drirexwsz/image/upload/v1669301037/Bourne-2492_evomlq.jpg"></a>
+                        <h5>Go for a Picnic in the War Memorial Gardens</h5>
+                        <p>Enjoy a picnic in a setting that inspires calmful thought and reflection</p>
+                    </div>
+                    <div>
+                        <a href="https://paintapotplacebourne.co.uk/">
+                        <img id="paint-a-pot" src="https://res.cloudinary.com/drirexwsz/image/upload/v1669301097/selection-of-pots_evxb15.jpg"></a>
+                        <h5>Get Creative at the Paint-a-Pot Place</h5>
+                        <p>Go paint a pot after a cafe/pub hop through Bourne as a memento of your visit</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ACTIVITIES SECTION -->
+            <div id="form-container">
+                <div id="form">
+                    <div id="form-title">
+                        <h2>Book Your Tour Today!</h2>
+                    </div>
+                        <form action="/bookings.php">
+                        <label for="name"></label><br>
+                        <input type="text" id="name-box" onfocus="this.value=''" value=" Your Name"><br>
+                        <label for="date"></label><br>
+                        <div id="datetime">
+                            <input type="date" id="date-box" required><br><br>
+                            <input type="time" id="time-box" required><br><br>
+                        </div>
+                        <input type="submit" id="submit-box" onfocus="this.value=''" value="Submit">
+                    </form> 
+                </div>
+            </div>
+            
+            
+            <!-- GUIDE SECTION -->
+            <div id="guide-container">
+                <div id="guide-box">
+                    <div id="guide-heading">
+                        <h3>Your Guide</h3>
+                    </div>
+                        <img id="guide-pic" src="https://res.cloudinary.com/drirexwsz/image/upload/v1669390733/Chris_Webster_-_Picture_bhtxts.jpg">
+                    <div>
+                        <h4 id="guide-name">Chris Webster</h4>
+                        <p id="guide-details">“I lived in Bourne for 15 years as a youngster and regularly visit family there, so I can show you a true, authentic British experience”.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <p id="footer-text">Created by Chris Webster - 2022</p>
+            </div>
+        </div>
+    </body>
+</html>

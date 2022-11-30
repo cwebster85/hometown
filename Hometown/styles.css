@@ -1,0 +1,296 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#container  {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    padding: 0;
+}
+
+#hero {
+    background-image: url("https://res.cloudinary.com/drirexwsz/image/upload/v1669738967/IMG_3580_an8bzk.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 343px;
+    left: 0px;
+    top: 0px;
+}
+
+#baldock:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #000000;
+}
+
+#memorial-gardens:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #000000;
+}
+
+#paint-a-pot:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #000000;
+}
+
+#title {
+    background-color: #1D3557;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 42%;
+    margin-top: 115px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #000000;
+}
+
+#tagline {
+    position: relative;
+    width: 412px;
+    height: 47px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: calc(50% - 412px/2);
+    background: #457B9D;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18.72px;
+    text-align: center;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #000000;
+    margin-top: -10px;
+}
+
+#activities-container {
+    width: 100%;
+    top: 345px;
+    text-align: center;
+    background: #F1FAEE;
+    margin-top: -40px;
+}
+
+#activities-heading {
+    line-height: 70px;
+    color: #1D3557;
+    margin-bottom: -20px;
+}
+
+#activity-images {
+    display: flex;
+    justify-content: space-between;
+}
+
+#form-container {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 350px;  
+    background: #F4F8F9;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-title {
+    position: absolute;
+    margin-bottom: 73px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 533px;
+    height: 250px;
+    background: #B1D3D7;
+    border-radius: 8px; 
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+p {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: #1D3557;
+}
+
+#name-box {
+    border-radius: 10px;
+    width: 300px;
+    height: 28px;
+    font-family: arial;
+    font-style: italic;
+    color: gray;
+    text-align: center;
+}
+
+#date-box {
+    border-radius: 10px;
+    width: 210px;
+    height: 28px;
+    font-style: italic;
+    color: gray;    
+    text-align: center;
+}
+
+#time-box {
+    border-radius: 10px;
+    width: 80px;
+    height: 28px;
+    text-align: center;
+}
+
+#datetime {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+input[type=date]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+}
+input[type=date]:focus::-webkit-datetime-edit {
+    color: black !important;
+}
+
+#submit-box {
+    width: 70px;
+    height: 28px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+    background: #447B9D;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+
+#form-title {
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0px;
+    text-align: center;
+    margin-top: -100px;
+    color: #000000;
+}
+
+#guide-container {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 350px;  
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#guide-heading {
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    position: absolute;
+    margin: -140px 0 100px 150px;
+}
+
+
+#guide-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    height: 294px;
+    background: #A8DADC;
+    border-radius: 8px;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-bottom: 5px solid #000000;
+}
+
+#guide-name {
+    margin-top: 10px;
+    margin-right: 38px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+#guide-pic {
+    margin-top: 36px;
+    margin-left: 40px;
+    width: 180px;
+    height: 225px;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+#guide-details {
+    width: 100px;
+    height: 123px;
+    margin-left: 6px;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+#footer  {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #457B9D
+
+}
+
+#footer-text{
+    font-size: 14px;
+    font-weight: 200px;
+    color: white;
+}
