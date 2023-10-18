@@ -9,8 +9,6 @@ DARK BLUE: #1D3557
 */
 
 html, body {
-    width: 100%;
-    height: 100%;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -19,33 +17,15 @@ html, body {
 
 #container  {
     position: relative;
-    width: inherit;
-    height: inherit;
     padding: 0;
 }
 
 #hero {
     background-image: url("https://res.cloudinary.com/drirexwsz/image/upload/v1669738967/IMG_3580_an8bzk.jpg");
     background-size: cover;
+    background-attachment:local;
     width: 100%;
-    height: 343px;
-    left: 0px;
-    top: 0px;
-}
-
-#baldock:hover {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: 1px solid #000000;
-}
-
-#memorial-gardens:hover {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: 1px solid #000000;
-}
-
-#paint-a-pot:hover {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: 1px solid #000000;
+    height: 300px;
 }
 
 #title {
@@ -54,11 +34,11 @@ html, body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 42%;
+    width: 10em;
     margin-top: 115px;
     font-style: normal;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 1.8rem;
     color: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: 1px solid #000000;
@@ -77,13 +57,15 @@ html, body {
     border-radius: 10px;
     font-style: normal;
     font-weight: 700;
-    font-size: 18.72px;
+    font-size: 1.1rem;
     text-align: center;
     color: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: 1px solid #000000;
     margin-top: -10px;
 }
+
+/* ACTIVITIES */
 
 #activities-container {
     width: 100%;
@@ -102,7 +84,25 @@ html, body {
 #activity-images {
     display: flex;
     justify-content: space-between;
+    padding: 1.2em;
 }
+
+#baldock:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #000000;
+}
+
+#memorial-gardens:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #000000;
+}
+
+#paint-a-pot:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #000000;
+}
+
+/* FORM */
 
 #form-container {
     box-sizing: border-box;
@@ -140,7 +140,7 @@ p {
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.8em;
     text-align: center;
     color: #1D3557;
 }
@@ -197,6 +197,11 @@ input[type=date]:focus::-webkit-datetime-edit {
     justify-content: center;
     align-content: center;
     margin-top: 10px;
+    border: none;
+}
+
+#submit-box:active {
+    color: white;
 }
 
 img {
@@ -293,4 +298,36 @@ img {
     font-size: 14px;
     font-weight: 200px;
     color: white;
+}
+
+
+
+@media(min-width: 750px) {
+    #hero {
+        background-image: url('https://res.cloudinary.com/drirexwsz/image/upload/v1697653758/The_view_from_South_Street_at_Bourne_2C_Lincolnshire_-_geograph.org.uk_-_4662802_mdqtq3.jpg');
+        width: 100%;
+        height: 400px;
+    }
+
+    #activities-heading {
+        font-size: 1.5rem;
+    }
+
+    h5, p {
+        font-size: 1rem;
+        /* border: 1px solid red; */
+    }
+
+    #activity-images img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media(min-width: 950px) {
+    #hero {
+        background-image: url('https://res.cloudinary.com/drirexwsz/image/upload/v1697653758/The_view_from_South_Street_at_Bourne_2C_Lincolnshire_-_geograph.org.uk_-_4662802_mdqtq3.jpg');
+        width: 100%;
+        height: 700px;
+    }
 }
