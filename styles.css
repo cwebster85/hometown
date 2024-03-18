@@ -30,7 +30,8 @@ html, body {
 
 #title {
     background-color: #1D3557;
-    border-radius: 10px;
+    /* change this below */
+    border-radius: 8px; 
     display: inline-flex;
     justify-content: center;
     align-items: center;
